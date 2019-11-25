@@ -1,0 +1,21 @@
+1. Take the move_turtle folder from the zip, place it in the src folder in your catkin_ws folder.
+2. Run the following cmd command in your catkin folder:
+ 		source devel/setup.bash 
+   This will setup your work environment.
+3. Open 2 new terminals in addition to the one you wrote the above command in:
+   a. In terminal 2 write the command:
+	roscore
+      To start ros.
+   b. In terminal 3 write the command:
+        rosrun turtlesim turtlesim_node
+   c. In the original terminal (That you opened in your catkin_ws folder) write:
+        catkin_make --pkg move_turtle
+        roslaunch move_turtle move_turtle.launch
+
+
+If everything was done properly, the turtle will now move 1 meter
+and turn 45 degrees before stopping, while printing the location 
+to the cmd.
+
+
+Run tutorial by DavidG8168.
